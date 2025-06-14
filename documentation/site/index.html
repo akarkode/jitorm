@@ -267,6 +267,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -278,6 +291,112 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Key Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Example Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      model.py
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crudpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      crud.py
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-example-fastapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Integration Example (FastAPI)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#academic-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Academic Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠 Dependencies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 License
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -303,6 +422,101 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Key Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Example Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      model.py
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crudpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      crud.py
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-example-fastapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Integration Example (FastAPI)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#academic-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Academic Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠 Dependencies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 License
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -318,103 +532,131 @@
 
 
 <h1 id="jitorm-just-in-time-optimized-python-orm">JITORM: Just-In-Time Optimized Python ORM</h1>
-<p>JITORM is an Object-Relational Mapping (ORM) framework for Python, developed to improve performance in database operations by introducing Just-In-Time (JIT) compilation in the mapping process. Unlike conventional ORMs, JITORM transforms data mapping logic into native machine code using LLVM via <code>llvmlite</code>, resulting in higher throughput and lower memory usage.</p>
-<hr />
-<h1 id="what-is-jitorm">📘 What is JITORM?</h1>
-<p>JITORM (Just-In-Time Object-Relational Mapper) is a high-performance Python ORM designed to optimize data mapping operations through Just-In-Time compilation. It translates data access and mapping logic into native machine code using LLVM via the <code>llvmlite</code> library. This approach eliminates interpretation overhead, making it suitable for large-scale, resource-constrained applications.</p>
-<p>JITORM was developed as part of a research project at Telkom University and is specifically engineered for performance-sensitive scenarios where conventional Python ORMs (like SQLAlchemy, PonyORM, or Tortoise) fall short.</p>
-<hr />
-<h1 id="why-jitorm-is-fast">⚡ Why JITORM Is Fast</h1>
+<p>JITORM is a Python-based Object-Relational Mapping (ORM) framework enhanced with Just-In-Time (JIT) compilation to optimize data mapping performance. Developed for data-intensive environments, it significantly reduces execution time, memory usage, and CPU load compared to traditional ORM frameworks.</p>
+<h2 id="key-features">🚀 Key Features</h2>
 <ul>
-<li>
-<p><strong>JIT Compilation with LLVM</strong>: Instead of interpreting Python bytecode for every object mapping operation, JITORM compiles mapping logic into native machine code using <code>llvmlite</code>.</p>
-</li>
-<li>
-<p><strong>Reduced Runtime Overhead</strong>: Repetitive operations like <code>bulk_create</code> and <code>get_list</code> benefit from instruction-level optimization.</p>
-</li>
-<li>
-<p><strong>Cached Compilation</strong>: Once compiled, the mapping logic is cached and reused, reducing redundant computation on future operations.</p>
-</li>
-<li>
-<p><strong>Low-Level Memory and CPU Efficiency</strong>: Benchmarks show up to 99% lower memory use and significantly lower CPU cycles in large-data scenarios.</p>
-</li>
+<li>Declarative model definition</li>
+<li>Backend support for PostgreSQL, MySQL, and SQLite</li>
+<li>JIT compilation using LLVM (via llvmlite)</li>
+<li>Optimized object mapping layer</li>
+<li>Compatible with Flask and FastAPI</li>
+<li>Efficient for large dataset processing and batch operations</li>
 </ul>
 <hr />
-<h1 id="installation">🛠 Installation</h1>
-<p>Install from GitHub:</p>
+<h2 id="installation">📦 Installation</h2>
+<p>Install directly from GitHub using:</p>
+<pre><code class="language-bash">pip install git+git://github.com/akarkode/jitorm.git
+</code></pre>
+<p>Or via HTTPS if preferred:</p>
 <pre><code class="language-bash">pip install git+https://github.com/akarkode/jitorm.git
 </code></pre>
-<p><strong>Dependencies</strong>:
-- Python 3.8+
-- <code>llvmlite</code>
-- <code>numpy</code>
-- <code>mysqlclient</code>, <code>psycopg2-binary</code> (optional for backend)</p>
 <hr />
-<h1 id="strengths">✅ Strengths</h1>
+<h2 id="example-usage">🧩 Example Usage</h2>
+<h3 id="modelpy"><code>model.py</code></h3>
+<pre><code class="language-python">from jitorm.orm.models import Model
+from jitorm.orm.fields import IntegerField, StringField
+
+class Users(Model):
+    id = IntegerField(primary_key=True)
+    username = StringField()
+    password = StringField()
+    name = StringField()
+    address = StringField()
+    email = StringField()
+    job = StringField()
+    birthdate = StringField()
+    phone_number = StringField()
+</code></pre>
+<h3 id="crudpy"><code>crud.py</code></h3>
+<pre><code class="language-python">from jitorm.orm.session import Session
+
+class CRUD:
+
+    @staticmethod
+    def create(db: Session, model, data):
+        record = model(**data)
+        db.add(record)
+        db.commit()
+        return record
+
+    @staticmethod
+    def get_by_id(db: Session, model, id):
+        record = db.query(model).filter(id=id).first()
+        if not record:
+            print(f&quot;Data with id {id} not found.&quot;)
+            return
+        return record
+
+    @staticmethod
+    def get_list(db: Session, model):
+        return db.query(model).all()
+
+    @staticmethod
+    def update(db: Session, model, filters, **kwargs):
+        db.update(model, filters, **kwargs)
+        db.commit()
+        return
+
+    @staticmethod
+    def delete(db: Session, model, filters):
+        db.delete(model, filters)
+        db.commit()
+        return
+
+    @staticmethod
+    def bulk_create(db: Session, model, data):
+        db.bulk_create(model=model, items=data)
+        return
+</code></pre>
+<hr />
+<h2 id="integration-example-fastapi">🔧 Integration Example (FastAPI)</h2>
+<pre><code class="language-python">from fastapi import FastAPI, Depends
+from jitorm.orm.postgresql import DatabaseConnection
+from jitorm.orm.session import Session
+from models import Users
+from crud import CRUD
+
+app = FastAPI()
+db_conn = DatabaseConnection(
+    host=&quot;localhost&quot;,
+    port=5432,
+    user=&quot;postgres&quot;,
+    password=&quot;yourpassword&quot;,
+    database=&quot;yourdb&quot;
+)
+
+def get_db():
+    with Session(db_conn) as db:
+        yield db
+
+@app.post(&quot;/users&quot;)
+def create_user(data: dict, db=Depends(get_db)):
+    return CRUD.create(db, Users, data)
+
+@app.get(&quot;/users/{user_id}&quot;)
+def get_user(user_id: int, db=Depends(get_db)):
+    return CRUD.get_by_id(db, Users, user_id)
+</code></pre>
+<hr />
+<h2 id="academic-background">📚 Academic Background</h2>
+<p>This project is based on the research:</p>
+<p><strong>Enhancing Python Object-Relational Mapping Performance using Just-In-Time Compiler</strong><br />
+by Aldi Setiawan — Telkom University, 2025</p>
+<p>🧾 Official Publications:
+- IEEE Xplore: https://ieeexplore.ieee.org/document/10933413
+- ResearchGate: https://www.researchgate.net/publication/390221559_Enhancing_Python_Object-Relational_Mapping_Performance_using_Just-in-Time_Compiler</p>
+<p>🟢 This paper has been officially indexed by <strong>Scopus</strong>.</p>
+<hr />
+<h2 id="dependencies">🛠 Dependencies</h2>
 <ul>
-<li>
-<p><strong>High Performance in Repetitive Workloads</strong><br />
-  Excellent for <code>bulk_create</code>, <code>get_list</code>, and large-scale insertions.</p>
-</li>
-<li>
-<p><strong>Low Memory Footprint</strong><br />
-  Demonstrated up to 99% less memory usage vs traditional ORMs at 200K records.</p>
-</li>
-<li>
-<p><strong>Better CPU Efficiency</strong><br />
-  Native code runs with fewer CPU instructions and less Python overhead.</p>
-</li>
-<li>
-<p><strong>Schema-Aware Caching</strong><br />
-  Avoids redundant work by reusing compiled mapping logic.</p>
-</li>
-<li>
-<p><strong>Modern Framework Compatibility</strong><br />
-  Integrates smoothly with FastAPI or Flask with minimal boilerplate.</p>
-</li>
+<li><code>mysqlclient</code></li>
+<li><code>psycopg2-binary</code></li>
+<li><code>llvmlite</code></li>
+<li><code>numpy</code></li>
 </ul>
 <hr />
-<h1 id="limitations">⚠️ Limitations</h1>
-<ul>
-<li>
-<p><strong>First-Use Compile Overhead</strong><br />
-  The first-time JIT compilation introduces slight latency.</p>
-</li>
-<li>
-<p><strong>No Advanced ORM Features</strong><br />
-  No relationship mapping, migrations, transactions, etc.</p>
-</li>
-<li>
-<p><strong>Schema-Sensitive Cache</strong><br />
-  Manual recompile needed when schema changes.</p>
-</li>
-<li>
-<p><strong>Single-Language, Single-Model Focus</strong><br />
-  Multi-table and cross-language tests not yet supported.</p>
-</li>
-<li>
-<p><strong>LLVM Dependency</strong><br />
-  Requires LLVM and <code>llvmlite</code> setup.</p>
-</li>
-</ul>
-<hr />
-<h1 id="when-to-use-jitorm">🧭 When to Use JITORM</h1>
-<h3 id="recommended-for">✅ Recommended for:</h3>
-<ul>
-<li>Repetitive, high-volume operations (50K+ records)</li>
-<li>Running on constrained environments (low RAM/CPU)</li>
-<li>Long-living services or analytical tools</li>
-<li>Replacing traditional ORMs that bottleneck performance</li>
-</ul>
-<h3 id="not-recommended-for">❌ Not Recommended for:</h3>
-<ul>
-<li>One-off queries or admin panels</li>
-<li>Projects needing joins, nested relationships, or transactions</li>
-<li>Rapid schema changes without versioning</li>
-<li>Real-time low-latency apps sensitive to first-use overhead</li>
-</ul>
-<hr />
-<p>© 2025 AKARKODE · Research-backed and Scopus-indexed.</p>
+<h2 id="license">📄 License</h2>
+<p>MIT License © 2025 AKARKODE</p>
 
 
 
