@@ -130,10 +130,16 @@ def get_user(user_id: int, db=Depends(get_db)):
 
 ## 📚 Academic Background
 
-This project is based on the master's thesis:
+This project is based on the research:
 
-> "Enhancing Python Object-Relational Mapping Performance using Just-In-Time Compiler"  
-> by Aldi Setiawan — Telkom University, 2025
+**Enhancing Python Object-Relational Mapping Performance using Just-In-Time Compiler**  
+by Aldi Setiawan — Telkom University, 2025
+
+🧾 Official Publications:
+- IEEE Xplore: https://ieeexplore.ieee.org/document/10933413
+- ResearchGate: https://www.researchgate.net/publication/390221559_Enhancing_Python_Object-Relational_Mapping_Performance_using_Just-in-Time_Compiler
+
+🟢 This paper has been officially indexed by **Scopus**.
 
 ---
 
