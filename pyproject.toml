@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "jitorm"
+version = "0.1.0"
+description = "Just-In-Time optimized ORM for Python"
+authors = ["AKARKODE <akarkode@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "jitorm" }]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+mysqlclient = "^2.2.0"
+psycopg2-binary = "^2.9.0"
+llvmlite = "^0.43.0"
+numpy = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
